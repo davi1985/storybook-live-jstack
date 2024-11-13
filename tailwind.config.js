@@ -2,7 +2,7 @@
 export default {
   darkMode: ['class'],
   safelist: ['dark'],
-  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
     extend: {
       borderRadius: {

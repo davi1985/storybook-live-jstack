@@ -4,6 +4,7 @@ import { withThemeByClassName } from '@storybook/addon-themes'
 import '../src/index.css'
 
 const preview: Preview = {
+  // tags: ['autodocs'],
   parameters: { layout: 'centered' },
   decorators: [
     withThemeByClassName<ReactRenderer>({

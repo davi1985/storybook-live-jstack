@@ -1,0 +1,61 @@
+import { Meta, Canvas, Story, Controls } from '@storybook/blocks'
+import * as ButtonStories from './Button.stories'
+
+<Meta of={ButtonStories} />
+
+# Welcome to Button's Documentation
+
+### When to use
+
+A buton means an operation (or a series of operations). Clicking a button will trigger corresponding business logic.
+
+We provide 5 types of buttons:
+
+<ul className="space-y-1">
+  <li>
+    <strong>Default:</strong> A standard button with a solid background,
+    typically used for primary actions.
+  </li>
+  <li>
+    <strong>Secondary:</strong> A less prominent button, used for secondary
+    actions or to complement the primary button.
+  </li>
+  <li>
+    <strong>Outline:</strong> A button with a transparent background and a
+    visible border, often used to emphasize actions without being too bold.
+  </li>
+  <li>
+    <strong>Ghost:</strong> A minimalist button with no background or border,
+    designed to blend into the background while remaining interactive.
+  </li>
+  <li>
+    <strong>Link:</strong> A button styled as a hyperlink, used when the action
+    navigates to another page or section.
+  </li>
+</ul>
+
+## Examples
+
+### Default
+
+<Canvas of={ButtonStories.Default} />
+
+### Secondary
+
+<Canvas of={ButtonStories.Secondary} />
+
+Give this code
+
+```jsx
+<Button disabled onClick={() => {}} size="sm" variant="outline">
+  Button
+</Button>
+```
+
+This will the result:
+
+<Story of={ButtonStories.Outline} />
+
+# API
+
+<Controls />
